@@ -1,2 +1,100 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
+
+@theme {
+
+    /*=============== COLOR VARIABLES ===============*/
+    --color-first-color: hsl(28, 95%, 60%);
+    --color-first-color-alt: hsl(28, 95%, 56%);
+    --color-beige-color: hsl(40, 45%, 86%);
+    --color-beige-color-light: hsl(40, 45%, 94%);
+    --color-beige-color-alt: hsl(40, 35%, 72%);
+    --color-brown-color: hsl(18, 15%, 24%);
+    --color-title-color: hsl(0, 0%, 6%);
+    --color-text-color: hsl(0, 0%, 40%);
+    --color-white-color: hsl(0, 0%, 98%);
+    --color-body-color: hsl(0, 0%, 100%);
+    --color-container-color: hsl(0, 0%, 96%);
+    --color-border-color: hsl(0, 0%, 85%);
+
+    /*========== Font and typography ==========*/
+    --font-body-font: "Montserrat", sans-serif;
+    --font-second-font: "Chakra Petch", sans-serif;
+    --text-text-biggest-font-size: 1.875rem;
+    --text-big-font-size: 1.5rem;
+    --text-h1-font-size: 1.5rem;
+    --text-h2-font-size: 1.25rem;
+    --text-h3-font-size: 1rem;
+    --text-normal-font-size: .938rem;
+    --text-small-font-size: .813rem;
+    --text-smaller-font-size: .75rem;
+
+    /*========== breakpoint ==========*/
+    --breakpoint-2lg: 72rem;
+}
+
+@layer utilities {
+    /*========== Reuseable Classes ==========*/
+    .z_tooltip {
+        @apply z-10;
+    }
+
+    .z_fixed {
+        @apply z-[100];
+    }
+
+    .parent{
+        @apply w-max-[1120px] mx-4;
+    }
+
+    .section {
+        @apply py-20 px-4;
+    }
+
+    .section__title{
+        @apply text-center text-big-font-size mb-6;
+    }
+
+    .main{
+        @apply overflow-hidden;
+    }
+}
+
+/*========== Base variables ==========*/
+@layer base {
+    html {
+        @apply scroll-smooth;
+    }
+
+    body,
+    input,
+    button {
+        @apply font-body-font text-normal-font-size;
+    }
+
+    body {
+        @apply bg-body-color text-title-color;
+    }
+
+    input,
+    button {
+        @apply bg-none outline-none border-none;
+    }
+
+    h1, h2, h3, h4 {
+        @apply text-title-color font-second-font font-bold leading-[120%];
+    }
+
+    ul {
+        @apply list-none;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    img {
+        @apply w-max-[100%] block h-auto;
+    }
+
+}
