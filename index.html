@@ -1,66 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- ========================= Favicon =============================-->
     <link rel="shortcut icon" href="" type="image/x-icon">
-    
+
     <!-- ========================= Remix Icons =============================-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
 
     <!-- ========================= swiper CSS =============================-->
     <link rel="stylesheet" href="">
-    
+
     <!-- ========================= Tailwind CSS =============================-->
     <link rel="stylesheet" href="./assets/css/output.css">
 
     <title>Responsive Website | Barbour Shop</title>
 </head>
+
 <body>
- <header class="header" id="header">
-    <nav class="nav parent">
-        <a href="index.html">BARBOUR_SHOP</a>
+    <header
+        class="header fixed w-screen top-0 left-0 bg-black z-100 transition-colors duration-400 max-2lg:flex max-2lg:justify-center"
+        id="header">
+        <nav
+            class="nav parent relative h-14 max-2lg:w-full flex justify-between items-center max-2lg:mx-auto max-2lg:h-22">
+            <a href="index.html"
+                class="nav_logo text-white-color font-second-font font-bold transition-colors duration-400">BARBOUR_SHOP</a>
 
-        <div class="nav_menu" id="nav_menu">
-            <ul class="nav_list" id="nav_">
-                <li>
-                    <a href="#home" class="nav_link">Home</a>
-                </li>
+            <div class="nav_menu max-max-2lg:fixed max-max-2lg:top-0
+             max-max-2lg:h-full max-max-2lg:w-[300px] max-max-2lg:p-[7rem_0_2rem_2rem]
+              max-max-2lg:bg-body-color max-max-2lg:z-100 max-max-2lg:transition-all max-max-2lg:duration-700
+               max-max-2lg:shadow-lg/50  max-max-2lg:right-[-120%]" id="nav_menu">
+                <ul class="nav_list flex flex-col gap-y-10 max-2lg:flex-row max-2lg:items-center max-2lg:gap-x-16"
+                    id="nav_list">
+                    <li>
+                        <a href="#home" class="nav_link">Home</a>
+                    </li>
 
-                <li>
-                    <a href="#aboutus" class="nav_link">About US</a>
-                </li>
+                    <li>
+                        <a href="#aboutus" class="nav_link">About US</a>
+                    </li>
 
-                <li>
-                    <a href="#works" class="nav_link">Works</a>
-                </li>
+                    <li>
+                        <a href="#works" class="nav_link">Works</a>
+                    </li>
 
-                <li>
-                    <a href="#servisec" class="nav_link">Services</a>
-                </li>
+                    <li>
+                        <a href="#servisec" class="nav_link">Services</a>
+                    </li>
 
-                <li>
-                    <a href="#experts" class="nav_link nav_button">Experts</a>
-                </li>
-            </ul>
+                    <li>
+                        <a href="#experts" class="nav_link">Experts</a>
+                    </li>
 
-            <!-- close -->
-             <button class="nav_close" id="nav_close">
-                <i class="ri-close-line"></i>
-             </button>
+                    <li>
+                        <a href="#"
+                            class="nav_button bg-first-color py-3 px-6 rounded font-semibold hover:bg-first-color-alt ">Contact
+                            US</a>
+                    </li>
+                </ul>
 
-             <!-- toggle -->
-             <button class="nav_toggle" id="nav_toggle">
+                <!-- close -->
+                <button class="nav_close absolute top-3 right-3 text-2xl cursor-pointer max-2lg:hidden" id="nav_close">
+                    <i class="ri-close-line"></i>
+                </button>
+            </div>
+            <!-- toggle -->
+            <button
+                class="nav_toggle text-white-color text-2xl font-bold transition-colors duration-400 cursor-pointer max-2lg:hidden"
+                id="nav_toggle">
                 <i class="ri-apps-2-fill"></i>
-             </button>
-        </div>
-    </nav>
- </header>
+            </button>
+        </nav>
+    </header>
 
 
+    <!-- ========================= Home and Section ================================== -->
 
+    <section class="home" id="home">
 
+    </section>
 
     <!-- ========================= GSAP =============================-->
     <script src=""></script>
@@ -70,6 +90,7 @@
     <script src=""></script>
 
     <!-- ========================= Main Js =============================-->
-     <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/main.js"></script>
 </body>
+
 </html>

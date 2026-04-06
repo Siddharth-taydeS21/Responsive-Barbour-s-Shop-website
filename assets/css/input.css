@@ -30,21 +30,13 @@
     --text-smaller-font-size: .75rem;
 
     /*========== breakpoint ==========*/
-    --breakpoint-2lg: 72rem;
+    --breakpoint-max-2lg: 72rem;
 }
 
 @layer utilities {
     /*========== Reuseable Classes ==========*/
-    .z_tooltip {
-        @apply z-10;
-    }
-
-    .z_fixed {
-        @apply z-[100];
-    }
-
     .parent{
-        @apply w-max-[1120px] mx-4;
+        @apply max-w-[1120px] mx-4;
     }
 
     .section {
@@ -57,6 +49,14 @@
 
     .main{
         @apply overflow-hidden;
+    }
+
+    .nav_link{
+        @apply text-title-color font-semibold transition-colors duration-400 hover:text-first-color max-2lg:text-white-color;
+    }
+
+    .show{
+        @apply max-max-2lg:right-0;
     }
 }
 
@@ -94,7 +94,11 @@
     }
 
     img {
-        @apply w-max-[100%] block h-auto;
+        @apply max-w-[100%] block h-auto;
+    }
+
+    section{
+        @apply max-2lg:pt-28 max-2lg:pb-20;
     }
 
 }
