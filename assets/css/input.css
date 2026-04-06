@@ -31,11 +31,13 @@
 
     /*========== breakpoint ==========*/
     --breakpoint-max-2lg: 72rem;
+    --breakpoint-xs: 34rem;
 }
 
 @layer utilities {
+
     /*========== Reuseable Classes ==========*/
-    .parent{
+    .parent {
         @apply max-w-[1120px] mx-4;
     }
 
@@ -43,21 +45,28 @@
         @apply py-20 px-4;
     }
 
-    .section__title{
+    .section__title {
         @apply text-center text-big-font-size mb-6;
     }
 
-    .main{
+    .main {
         @apply overflow-hidden;
     }
 
-    .nav_link{
-        @apply text-title-color font-semibold transition-colors duration-400 hover:text-first-color max-2lg:text-white-color;
+    .nav_link {
+        @apply font-semibold transition-colors duration-400 hover:text-first-color max-2lg:text-white-color;
     }
 
-    .show{
+    .show {
         @apply max-max-2lg:right-0;
     }
+
+    .scroll-header{
+        /* change header styles*/
+        @apply bg-body-color shadow-lg/100;
+    }
+
+
 }
 
 /*========== Base variables ==========*/
@@ -81,7 +90,10 @@
         @apply bg-none outline-none border-none;
     }
 
-    h1, h2, h3, h4 {
+    h1,
+    h2,
+    h3,
+    h4 {
         @apply text-title-color font-second-font font-bold leading-[120%];
     }
 
@@ -97,7 +109,7 @@
         @apply max-w-[100%] block h-auto;
     }
 
-    section{
+    section {
         @apply max-2lg:pt-28 max-2lg:pb-20;
     }
 

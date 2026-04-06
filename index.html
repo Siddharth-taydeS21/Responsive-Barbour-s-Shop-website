@@ -21,7 +21,7 @@
 
 <body>
     <header
-        class="header fixed w-screen top-0 left-0 bg-black z-100 transition-colors duration-400 max-2lg:flex max-2lg:justify-center"
+        class="header fixed w-screen top-0 left-0 bg-transparent z-100 transition-colors duration-400 max-2lg:flex max-2lg:justify-center"
         id="header">
         <nav
             class="nav parent relative h-14 max-2lg:w-full flex justify-between items-center max-2lg:mx-auto max-2lg:h-22">
@@ -75,12 +75,24 @@
         </nav>
     </header>
 
-
     <!-- ========================= Home and Section ================================== -->
 
-    <section class="home" id="home">
+    <section class="home relative h-[800px] overflow-hidden" id="home">
+        <img src="./assets/images/home_bg.jpg" alt="Barbour shop interior" class="home_bg absolute top-0 left-0 w-full h-full object-cover object-top opacity-[0.7]">
 
+        <div class="home_shadow absolute top-0 left-0 w-full h-full"></div>
+        <div class="home_box box h-full w-full grid grid-cols-1 place-items-center xs:grid-cols-[450px] xs:justify-center">
+            <div class="home_data z-10 text-center">
+                <img src="./assets/images/shop_logo.png" alt="shop logo" class="home_logo w-[120px] mx-auto mb-4">
+
+                <h1 class="home_tile text-black text-text-biggest-font-size max-2lg:text-[4rem]">HAIRCUT & BEARD <br> SPECIALISTS</h1>
+                <p class="home_discription text-black font-semibold mt-4 mb-12">Barbershop specializing in haircuts, fades, classic shaves, and beard design for men. Our team of professional barber guarantees impeccable results, tailored to your style, personality, and modern tastes</p>
+                <a href="#work" class="button inline-flex bg-first-color text-title-color font-semibold rounded-md p-[1rem_2rem] transition-colors hover:bg-first-color-alt">See our Haircut Works</a>
+            </div>
+        </div>
     </section>
+
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione distinctio aut itaque necessitatibus, cupiditate magni, illo pariatur dicta esse similique ducimus voluptatibus voluptatum nihil quos velit nulla labore incidunt. Quo cumque eius nostrum vero voluptas esse deserunt rerum eveniet dolorem odio minus dolor itaque, delectus ut explicabo magni modi commodi sed deleniti temporibus ratione voluptate. Deserunt omnis aspernatur et? Assumenda optio, deleniti nobis expedita eveniet saepe recusandae tempore quis ipsam in quaerat, veniam odio ut eius provident labore laboriosam odit ipsum, sunt quos vero accusantium corporis consequatur. Ratione, labore architecto. Suscipit, repellat quam. Tenetur maxime reprehenderit neque voluptate earum adipisci pariatur officiis, cupiditate, sapiente voluptatum molestias explicabo ullam odio consequatur delectus a error nulla animi nisi quae mollitia? Quisquam, ipsam aut? Facilis dolorem consequatur sed reprehenderit ratione totam a dolorum beatae explicabo minima iusto, nostrum inventore quia facere laboriosam consequuntur error ducimus. Eos, perspiciatis cum provident odit doloribus sint aliquid aperiam adipisci quia dolor assumenda, quo modi! Quo quos error quis accusantium iste vel veniam, illum voluptatibus soluta, natus quidem, nobis quam aperiam temporibus minima ex ipsam sunt hic ullam culpa reiciendis ad ut id perferendis! Minus cupiditate enim ea nihil est veritatis, temporibus a itaque, incidunt numquam doloribus tempora sequi quis saepe deserunt, distinctio officiis. Expedita quia debitis consectetur. Error vero est vel officiis illum. Cupiditate voluptatibus dolorem sed pariatur, repellat eius error saepe earum alias a fugiat magni inventore, accusantium adipisci dolore molestias. Modi numquam obcaecati dolores, laborum atque ut tempora quia veniam doloremque explicabo ducimus id deleniti optio qui quis pariatur sed dolorem eos. Nulla vero esse quia distinctio. Animi incidunt at, illum dignissimos libero eos dolores pariatur, laudantium dolore mollitia cum quam deleniti cumque in illo amet aliquid inventore corporis. Dicta quia unde cum illo excepturi voluptatum laboriosam quidem, ipsa ipsum? Ea sint et maxime libero, impedit eligendi voluptatum aspernatur illum nihil, dolor iure! Rem mollitia voluptatum sint, necessitatibus dignissimos iure! Labore consectetur unde magni officiis dolores in, esse aliquid porro natus ratione hic nesciunt laborum, debitis maiores, eveniet quos? Eaque nesciunt repellendus magnam provident, nisi rem aliquam, temporibus sapiente recusandae sit, sunt impedit obcaecati sed ab! Officia nihil totam, praesentium enim sit iusto saepe commodi amet libero natus est veritatis? Dolore explicabo assumenda repellendus voluptatibus molestiae optio qui! Placeat at qui tempora accusamus natus libero voluptates itaque quidem quas necessitatibus voluptas ut est ad, minima labore sed doloribus repudiandae aspernatur pariatur ipsum mollitia aliquam! Rem autem ducimus obcaecati possimus distinctio enim corrupti unde ab ad dolorum quia ipsum praesentium, magni at dolores atque tempora eveniet illo sit vitae deserunt. Soluta molestias ratione repellat minima fugit dolorum. Odit vitae aliquam dignissimos est, quasi molestiae eos laudantium consequatur a fugiat illo doloremque at deserunt perspiciatis magnam id officia esse quod, quos eveniet maxime, ipsum ad pariatur? Alias exercitationem amet dolores repudiandae. Corporis at optio voluptate, eveniet, id amet tenetur deleniti maiores magnam velit autem dolore iste ullam nam fugiat dolores consequuntur eum nemo, minima iusto. Libero repellat laudantium architecto autem magnam commodi incidunt veritatis unde hic! Deserunt.</div>
 
     <!-- ========================= GSAP =============================-->
     <script src=""></script>
