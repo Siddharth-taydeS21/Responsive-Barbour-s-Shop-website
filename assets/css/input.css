@@ -35,6 +35,12 @@
     --breakpoint-small: 400px;
 }
 
+@layer utilities {
+    .nav_link {
+        @apply text-black font-body-font font-medium transition-colors duration-500 lg:text-white text-lg;
+    }
+}
+
 /*========== Base variables ==========*/
 @layer base {
     html {

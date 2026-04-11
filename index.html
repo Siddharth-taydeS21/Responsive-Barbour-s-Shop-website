@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Barbour Shop Website</title>
+    <!-- ======================== Tailwind CSS (build file) ========================= -->
+    <link rel="stylesheet" href="./assets/css/output.css">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+
+    <!--=============== REMIXICONS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+
+</head>
+
+<body>
+    <!--=============== Header and Nav bar ===============-->
+    <header class="w-full fixed top-0 left-0 bg-black flex justify-between items-center">
+        <nav class="relative h-16 w-full max-w-7xl mx-auto p-6 flex justify-between items-center lg:h-24">
+
+            <a href="#home" class="text-white-color font-bold text-md text-xl">BARBERSHOP</a>
+
+            <div id="nav_menu" class="h-screen w-[250px] absolute top-0 -right-[120%] shadow-2xl/100 bg-white p-6 transition-[right] duration-400 lg:right-0 lg:bg-transparent lg:shadow-none lg:w-fit lg:top-3">
+                <ul id="nav_list" class="text-white-color flex flex-col gap-y-8 items-start lg:flex-row lg:gap-x-8 lg:h-full lg:w-fit">
+                    <li>
+                        <a href="#" class="nav_link hover:text-first-color">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="nav_link hover:text-first-color">About Us</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="nav_link hover:text-first-color">Works</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="nav_link hover:text-first-color">Services</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="nav_link hover:text-first-color">Experts</a>
+                    </li>
+
+                    <li>
+                        <a href="#" id="nav_button" class="nav_link bg-first-color p-[.7rem_2rem] rounded-md transition-colors hover:bg-first-color-alt">Contact us</a>
+                    </li>
+                </ul>
+
+                <!-- close button -->
+                <button id="nav_close" class="font-bold absolute top-6 right-6 lg:hidden">
+                    <i class="ri-close-large-fill"></i>
+                </button>
+            </div>
+
+
+            <!-- Toggle nav bar for screens less than 1024px -->
+             <button id="nav_toggle" class="text-white-color font-bold lg:hidden">
+                <i class="ri-menu-line"></i>
+             </button>
+
+        </nav>
+    </header>
+    <!--=============== Main JS ===============-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
