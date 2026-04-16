@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
 
     <!--=============== SWIPER CSS ===============-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
 
     <!-- ======================== Tailwind CSS (build file) ========================= -->
     <link rel="stylesheet" href="./assets/css/output.css">
@@ -43,7 +43,7 @@
                     </li>
 
                     <li>
-                        <a href="#" class="nav_link">Services</a>
+                        <a href="#services" class="nav_link">Services</a>
                     </li>
 
                     <li>
@@ -128,8 +128,9 @@
         <!--=============== WORK SECTION ===============-->
 
         <section id="work" class="bg-beige-color">
-            <div class="container grid px-4 justify-center gap-y-12 lg:grid-cols-[300px_650px] lg:gap-x-18">
-                <div id="work_data" class="text-center grid gap-y-4 sm:w-[400px] sm:mx-auto lg:w-full lg:place-content-center lg:gap-y-12 lg:text-start">
+            <div class="container grid px-4 justify-center gap-y-12 lg:grid-cols-[300px_650px] lg:gap-x-10">
+                <div id="work_data"
+                    class="text-center grid gap-y-4 sm:w-[400px] sm:mx-auto lg:w-full lg:place-content-center lg:gap-y-12 lg:text-start">
 
                     <h2 id="Work_title" class="text-3xl lg:text-4xl">DISCOVER <br> OUR WORKS</h2>
                     <p id="work_discription" class="font-semibold">Our work includes both vintage and modern styles. We
@@ -171,16 +172,93 @@
                             <img src="./assets/images/work-img-10.png" alt="hair and beard cutting service">
                         </article>
                     </div>
-                     <!-- swiper pagination -->
-                     <div class="swiper-pagination"></div>
+                    <!-- swiper pagination -->
+                    <div class="swiper-pagination"></div>
 
-                     <!-- swiper buttons -->
-                     <div class="swiper-button-next"><i class="ri-arrow-right-fill"></i></div>
-                     <div class="swiper-button-prev"><i class="ri-arrow-left-fill"></i></div>
+                    <!-- swiper buttons -->
+                    <div class="swiper-button-next"><i class="ri-arrow-right-fill"></i></div>
+                    <div class="swiper-button-prev"><i class="ri-arrow-left-fill"></i></div>
 
                 </div>
             </div>
         </section>
+
+        <!--=============== SERVICES SECTION ===============-->
+
+        <section id="services" class="bg-beige-color">
+            <div id="services_Container" class="container grid gap-y-12">
+
+                <div id="services_data">
+                    <h1 id="services_title" class="text-3xl text-center mb-6 lg:text-4xl lg:mb-10">OUR SERVICES</h1>
+
+                    <ul class="service_prices grid gap-y-6">
+
+                        <li class="service_plan">
+                            <h3 class="service_name">ADULT HAIRCUT</h3>
+                            <p class="service_price">$40</p>
+                        </li>
+
+                        <li class="service_plan">
+                            <h3 class="service_name">KIDS HAIRCUT</h3>
+                            <p class="service_price">$20</p>
+                        </li>
+
+                        <li class="service_plan">
+                            <h3 class="service_name">NECK SHAVE</h3>
+                            <p class="service_price">$35</p>
+                        </li>
+
+                        <li class="service_plan">
+                            <h3 class="service_name">BEARD TRIM</h3>
+                            <p class="service_price">$15</p>
+                        </li>
+
+                        <li class="service_plan">
+                            <h3 class="service_name">HAIRCUT + SHAVE</h3>
+                            <p class="service_price">$70</p>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="service_swiper swiper bg-first-color rounded-2xl w-full">
+                    <div class="swiper-wrapper">
+
+                        <article class="service_testimonial swiper-slide">
+                            <p class="service_testimonial_discription pb-24 text-lg font-semibold mb-10">Excellent barbershop; the
+                                atmosphere feels authentic from the moment you walk in. The service is professional, and
+                                the results are top-notch. Definitely a place you'll always want to return to.</p>
+                            <h2 class="service_testimonial_name text-xl lg:text-2xl">John D.</h2>
+                        </article>
+
+                        <article class="service_testimonial swiper-slide">
+                            <p class="service_testimonial_discription pb-24 text-lg font-semibold mb-10">Excellent atmosphere and
+                                top-notch service at all times. The barbers really do give you the haircut you want. I
+                                always leave feeling confident and refreshed. Highly recommended!</p>
+                            <h2 class="service_testimonial_name text-xl lg:text-2xl">Will C.</h2>
+                        </article>
+
+                        <article class="service_testimonial swiper-slide">
+                            <p class="service_testimonial_discription pb-24 text-lg font-semibold mb-10">True professionals who have
+                                mastered their craft. Flawless fades, impeccable beard trims, and excellent customer
+                                service. Booking is easy, and they're always punctual.</p>
+                            <h2 class="service_testimonial_name text-xl lg:text-2xl">Michel D.</h2>
+                        </article>
+
+                    </div>
+
+                    <!-- swiper pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- swiper buttons -->
+                    <div class="swiper-button-next"><i class="ri-arrow-right-fill"></i></div>
+                    <div class="swiper-button-prev"><i class="ri-arrow-left-fill"></i></div>
+
+                </div>
+
+            </div>
+        </section>
+
 
     </main>
 

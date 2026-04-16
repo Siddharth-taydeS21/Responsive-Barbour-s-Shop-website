@@ -44,8 +44,8 @@
         @apply mx-auto max-w-7xl px-4;
     }
 
-    .swiper-slide,
-    .swiper-slide img {
+    .work_swiper .swiper-slide,
+    .work_swiper .swiper-slide img {
         @apply w-[250px] max-w-[250px] rounded-2xl lg:w-[350px] lg:max-w-[350px];
     }
 
@@ -55,6 +55,22 @@
 
     .swiper-pagination-fraction {
         @apply mt-16
+    }
+
+    .service_plan{
+        @apply flex justify-between border-b border-beige-color-alt mb-[.40rem] text-lg lg:pb-[.60rem];
+    }
+
+    .service_plan:last-child{
+        @apply border-none;
+    }
+
+    .service_name{
+        @apply lg:text-2xl;
+    }
+
+    .service_price{
+        @apply font-semibold lg:text-2xl;
     }
 
 }
@@ -101,15 +117,19 @@
     }
 
     section {
-        @apply pt-16 pb-4 w-full;
+        @apply pt-20 pb-16 lg:pt-40 lg:pb-20 w-full;
     }
 
 }
+
+/* ==================== WORK SWIPER STYLES ==================== */
 
 .work_swiper {
     padding-top: 3.5rem;
     position: relative;
 }
+
+/* ==================== WORK SWIPER PAGINATION ==================== */
 
 .work_swiper .swiper-pagination-fraction {
     color: black;
@@ -117,6 +137,8 @@
     top: -3.7rem;
     max-height: 50px;
 }
+
+/* ==================== WORK SWIPER BUTTONS ==================== */
 
 .work_swiper .swiper-button-next,
 .work_swiper .swiper-button-prev {
@@ -132,4 +154,103 @@
 
 .work_swiper .swiper-button-prev {
     left: calc(50% - 5rem) !important;
+}
+
+
+/* ==================== SERVICES SWIPER STYLES ==================== */
+
+.service_swiper{
+    padding-inline: 1rem;
+    padding-block: 2rem;
+}
+
+.service_swiper .swiper-wrapper{
+    width : 100%;
+}
+
+.service_swiper .swiper-slide{
+    width : 100%;
+}
+
+.service_swiper .swiper-pagination {
+    position: absolute;
+    top: 64%;
+}
+
+/* ==================== SERVICES SWIPER PAGINATION ==================== */
+
+.service_swiper .swiper-pagination .swiper-pagination-bullet{
+    width: 27px;
+    height: 3px;
+    border-radius: .5rem;
+    background-color: black !important;
+    transition: .4s;
+}
+
+/* ==================== SERVICES SWIPER BUTTONS ==================== */
+
+.service_swiper .swiper-button-next,
+.service_swiper .swiper-button-prev {
+    display: inline-flex;
+    justify-content : center;
+    align-items: center;
+    font-size: 1.2rem;
+    color: black;
+    height: 26px;
+    width: 26px;
+    border: 2px solid;
+    border-radius: 50%;  
+    top: calc(100% - 2rem) !important;
+}
+
+.service_swiper .swiper-button-next{
+    left: calc(100% - 3rem) !important;
+}
+
+.service_swiper .swiper-button-prev{
+    left: calc(100% - 6rem) !important;
+}
+
+/* ==================== MEDIA QUERIES FOR SERVICES SWIPER ==================== */
+@media (width >= 540px) {
+    .service_swiper{
+        padding-inline: 2rem;
+    }
+}
+
+@media (width >= 640px){
+    #services_Container{
+        grid-template-columns: 450px;
+        justify-content : center;
+        align-items: center;
+    }
+
+    .service_swiper .swiper-button-next{
+        left: calc(100% - 3.8rem) !important;
+    }
+
+    .service_swiper .swiper-button-prev{
+        left: calc(100% - 6.5rem) !important;
+    }
+}
+
+@media (width >= 1024px) {
+    #services_Container{
+        grid-template-columns: repeat(2, 460px);
+        column-gap: 3.5rem;
+    }
+
+    .service_swiper{
+        padding: 3.5rem;
+    }
+
+    .service_swiper .swiper-button-next{
+        left: calc(100% - 5rem) !important;
+        top: calc(100% - 3.5rem) !important;
+    }
+
+    .service_swiper .swiper-button-prev{
+        left: calc(100% - 8rem) !important;
+        top: calc(100% - 3.5rem) !important;
+    }
 }

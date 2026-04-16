@@ -38,7 +38,7 @@ window.addEventListener('scroll', () => {
             link.style.color = 'black';
         });
 
-        header.classList.add('lg:shadow-2xl/100');
+        header.classList.add('shadow-2xl/100');
 
     } else {
         header.style.backgroundColor = 'transparent'
@@ -53,7 +53,7 @@ window.addEventListener('scroll', () => {
             }
         });
 
-        header.classList.remove('lg:shadow-2xl/100');
+        header.classList.remove('shadow-2xl/100');
     }
 })
 
@@ -72,5 +72,22 @@ var swiper = new Swiper(".work_swiper", {
     navigation: {
         nextEl: '.work_swiper .swiper-button-next',
         prevEl: '.work_swiper .swiper-button-prev',
+    }
+});
+
+// =========================== TESTIMONIAL SWIPER JS ======================== //
+var swiperTestimonial = new Swiper(".service_swiper", {
+    loop: true,
+    slidesPerView: '1',
+    spaceBetween: 56,
+    grabCursor: true,
+
+    pagination: {
+        el: '.swiper-pagination',
+    },
+
+    navigation: {
+        nextEl: '.service_swiper .swiper-button-next',
+        prevEl: '.service_swiper .swiper-button-prev',
     }
 });
