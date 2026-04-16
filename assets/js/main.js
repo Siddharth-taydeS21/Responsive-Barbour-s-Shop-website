@@ -3,6 +3,7 @@
 const navToggle = document.getElementById('nav_toggle');
 const navMenu = document.getElementById('nav_menu');
 const navClose = document.getElementById('nav_close');
+const navLink = document.querySelectorAll('.nav_link');
 
 navToggle.addEventListener('click', () => {
     navMenu.classList.remove('-right-[120%]')
@@ -14,10 +15,17 @@ navClose.addEventListener('click', () => {
     navMenu.classList.add('-right-[120%]')
 })
 
+/*========== REMOVE HAMBURGER MENU WHEN CLICK ON MENU KINKS ==========*/
+navLink.forEach((link) => {
+    link.addEventListener('click', () => {
+        navMenu.classList.remove('right-0')
+        navMenu.classList.add('-right-[120%]')
+    })
+})
+
 /*========== CHANGE HEADER STYLES ==========*/
 const header = document.querySelector('header');
-const navLink = document.querySelectorAll('.nav_link');
-const navLogo =  document.querySelector('#nav_logo');
+const navLogo = document.querySelector('#nav_logo');
 
 window.addEventListener('scroll', () => {
     if (window.scrollY >= 50) {
@@ -30,6 +38,8 @@ window.addEventListener('scroll', () => {
             link.style.color = 'black';
         });
 
+        header.classList.add('lg:shadow-2xl/100');
+
     } else {
         header.style.backgroundColor = 'transparent'
         navLogo.style.color = "white";
@@ -38,9 +48,29 @@ window.addEventListener('scroll', () => {
         navLink.forEach(link => {
             if (window.screen.width < 1024) {
                 link.style.color = 'black';
-            }else{
+            } else {
                 link.style.color = 'white';
             }
         });
+
+        header.classList.remove('lg:shadow-2xl/100');
     }
 })
+
+// =========================== WORK SWIPER JS ======================== //
+var swiper = new Swiper(".work_swiper", {
+    loop: true,
+    slidesPerView: 'auto',
+    spaceBetween: 24,
+    grabCursor: true,
+
+    pagination: {
+        el: '.swiper-pagination',
+        type: 'fraction',
+    },
+
+    navigation: {
+        nextEl: '.work_swiper .swiper-button-next',
+        prevEl: '.work_swiper .swiper-button-prev',
+    }
+});

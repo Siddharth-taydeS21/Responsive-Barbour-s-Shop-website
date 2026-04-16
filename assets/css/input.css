@@ -37,13 +37,28 @@
 
 @layer utilities {
     .nav_link {
-        @apply text-black font-body-font font-medium transition-colors duration-500 lg:text-white text-lg;
+        @apply text-black font-body-font font-medium transition-colors duration-500 lg:text-white text-lg hover:text-first-color;
     }
 
-    .container{
+    .container {
         @apply mx-auto max-w-7xl px-4;
     }
+
+    .swiper-slide,
+    .swiper-slide img {
+        @apply w-[250px] max-w-[250px] rounded-2xl lg:w-[350px] lg:max-w-[350px];
+    }
+
+    .swiper-navigation-icon {
+        @apply hidden;
+    }
+
+    .swiper-pagination-fraction {
+        @apply mt-16
+    }
+
 }
+
 
 /*========== Base variables ==========*/
 @layer base {
@@ -85,8 +100,36 @@
         @apply max-w-full block h-auto;
     }
 
-    section{
+    section {
         @apply pt-16 pb-4 w-full;
     }
 
+}
+
+.work_swiper {
+    padding-top: 3.5rem;
+    position: relative;
+}
+
+.work_swiper .swiper-pagination-fraction {
+    color: black;
+    font-weight: 600;
+    top: -3.7rem;
+    max-height: 50px;
+}
+
+.work_swiper .swiper-button-next,
+.work_swiper .swiper-button-prev {
+    position: absolute;
+    color: black;
+    font-size: 2rem;
+    top: 1rem !important;
+}
+
+.work_swiper .swiper-button-next {
+    left: calc(50% + 2rem) !important;
+}
+
+.work_swiper .swiper-button-prev {
+    left: calc(50% - 5rem) !important;
 }
