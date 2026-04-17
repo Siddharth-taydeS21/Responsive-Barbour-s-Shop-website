@@ -91,3 +91,15 @@ var swiperTestimonial = new Swiper(".service_swiper", {
         prevEl: '.service_swiper .swiper-button-prev',
     }
 });
+
+// =========================== SHOW SCROLL UP ======================== //
+const scrollUp = document.getElementById('scrollup');
+ window.addEventListener('scroll', () => {
+    if(this.scrollY >= 350){
+        scrollUp.classList.remove('-bottom-12');
+        scrollUp.classList.add('bottom-12');
+    }else{
+        scrollUp.classList.remove('bottom-12'); 
+        scrollUp.classList.add('-bottom-12');
+    }
+ })

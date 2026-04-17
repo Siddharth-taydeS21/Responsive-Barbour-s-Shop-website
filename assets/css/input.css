@@ -44,6 +44,8 @@
         @apply mx-auto max-w-7xl px-4;
     }
 
+    /*========== REPETITIVE CLASSES OF WORK SECTION ==========*/
+
     .work_swiper .swiper-slide,
     .work_swiper .swiper-slide img {
         @apply w-[250px] max-w-[250px] rounded-2xl lg:w-[350px] lg:max-w-[350px];
@@ -56,6 +58,8 @@
     .swiper-pagination-fraction {
         @apply mt-16
     }
+
+    /*========== REPETITIVE CLASSES OF SERVICES SECTION ==========*/
 
     .service_plan{
         @apply flex justify-between border-b border-beige-color-alt mb-[.40rem] text-lg lg:pb-[.60rem];
@@ -71,6 +75,83 @@
 
     .service_price{
         @apply font-semibold lg:text-2xl;
+    }
+
+    /*========== REPETITIVE CLASSES OF EXPERTS SECTION ==========*/
+
+    .expert-card{
+        @apply  bg-beige-color w-full rounded-2xl flex justify-center gap-8 p-4 pb-0 sm:justify-self-center lg:flex-col-reverse lg:w-fit lg:p-[1rem_1rem_0] xl:w-[250px];
+    }
+
+    .expert_img{
+        @apply w-[120px] origin-bottom-left transition-transform duration-400 hover:scale-105 sm:w-[150px] lg:w-[190px];
+    }
+
+    .expert_data{
+        @apply flex flex-col justify-center gap-y-2 lg:flex-row lg:justify-between;
+    }
+
+    .expert_socials{
+        @apply   flex gap-x-1 lg:flex-col;
+    }
+
+    .expert_name{ 
+        @apply   text-lg font-bold mb-[.3rem] sm:text-2xl;
+    }
+
+    .expert_proffesion{
+        @apply text-xs text-text-color sm:text-sm;
+    }
+
+    .expert_social_link{
+        @apply text-text-color transition-colors duration-400 hover:text-title-color;
+    }
+
+    .expert_social_link a i {
+        @apply origin-bottom-left text-xl sm:text-2xl;
+    }
+
+    /*========== REPETITIVE CLASSES OF CONTACT SECTION ==========*/
+    .contact_card{
+        @apply flex gap-x-6 items-center border-b border-gray-200 pb-10;
+    }   
+
+    .contact_card:last-child{
+        @apply border-0 pb-0;
+    }
+
+    .contact_icon i{
+        @apply  bg-black text-white text-4xl p-3 rounded-xl;
+    }
+
+    .contact_info{
+        @apply grid gap-y-2
+    }
+
+    .contact_title{
+        @apply text-xl
+    }
+
+    .conatct_address {
+        @apply font-medium;
+    }
+
+    .conatct_address a{
+        @apply block not-italic;
+    }
+
+    /*========== REPETITIVE CLASSES OF FOOTER ==========*/
+
+    .footer_social_links li {
+        @apply text-black transition-colors duration-400 hover:text-gray-500;
+    }
+
+    .footer_social_links li a i {
+        @apply text-2xl  
+    }
+
+    .footer_link{
+        @apply transition-all duration-300 hover:font-medium;
     }
 
 }
