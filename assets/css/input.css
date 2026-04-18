@@ -15,7 +15,7 @@
     --color-white-color: hsl(0, 0%, 98%);
     --color-body-color: hsl(0, 0%, 100%);
     --color-container-color: hsl(0, 0%, 96%);
-    --color-border-color: hsl(0, 0%, 85%);
+    --color-border-color: hsl(0, 0%, 85%); 
 
     /*========== Font and typography ==========*/
     --font-body-font: "Montserrat", sans-serif;
@@ -37,11 +37,15 @@
 
 @layer utilities {
     .nav_link {
-        @apply text-black font-body-font font-medium transition-colors duration-500 lg:text-white text-lg hover:text-first-color;
+        @apply text-black font-body-font font-medium text-lg transition-colors duration-500 hover:text-first-color lg:text-white;
     }
 
     .container {
         @apply mx-auto max-w-7xl px-4;
+    }
+
+    #nav_button{
+        @apply  bg-first-color p-[.7rem_2rem] rounded-md transition-colors duration-500 hover:text-black lg:hover:text-white hover:bg-first-color-alt;
     }
 
     /*========== REPETITIVE CLASSES OF WORK SECTION ==========*/

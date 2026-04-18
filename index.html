@@ -22,9 +22,9 @@
     <!--=============== Header and Nav bar ===============-->
     <header
         class="w-full fixed top-0 left-0 z-100 bg-transparent flex justify-between items-center transition-colors duration-400">
-        <nav class="relative h-12 w-full max-w-7xl mx-auto p-6 flex justify-between items-center lg:h-24">
+        <nav class="nav relative h-12 w-full max-w-7xl mx-auto p-6 flex justify-between items-center lg:h-24">
 
-            <a href="#home" id="nav_logo" class="text-white-color font-bold text-md text-xl">BARBERSHOP</a>
+            <a href="#home" id="nav_logo" class="text-white-color font-bold text-md text-xl transition-colors duration-400">BARBERSHOP</a>
 
             <div id="nav_menu"
                 class="h-screen lg:h-fit w-[250px] absolute top-0 -right-[120%] shadow-2xl/100 bg-white p-6 transition-[right] duration-400 lg:right-0 lg:bg-transparent lg:shadow-none lg:w-fit lg:top-3">
@@ -52,7 +52,7 @@
 
                     <li>
                         <a href="#contact" id="nav_button"
-                            class="nav_link bg-first-color p-[.7rem_2rem] rounded-md transition-colors duration-200 hover:bg-first-color-alt">Contact
+                            class="nav_link">Contact
                             us</a>
                     </li>
                 </ul>
@@ -75,19 +75,19 @@
     <main>
         <!--=============== HOME SECTION ===============-->
         <img src="./assets/images/home-bg.png" alt="Barbour-shop interior"
-            class="absolute top-0 left-0 z-0 w-screen h-[800px] object-cover object-center">
+            class="home-bg absolute top-0 left-0 z-0 w-screen h-[800px] object-cover object-center">
         <section id="home" class="h-[800px] relative w-full">
 
             <div
                 class="container h-full z-10 text-center grid justify-center items-center sm:grid-cols-[400px] sm:justify-center md:grid-cols-[480px] lg:grid-cols-[650px]">
                 <div id="home_Data" class="flex flex-col gap-y-8">
-                    <img src="./assets/images/shop_logo.png" alt="logo" class="w-[140px] mx-auto md:w-[150px]">
+                    <img src="./assets/images/shop_logo.png" alt="logo" class="home_logo w-[140px] mx-auto md:w-[150px]">
 
                     <h1 id="home_title" class="text-4xl text-white md:text-5xl">HAIRCUT AND BEARD <br> SPECIALISTS</h1>
                     <p id="home_discription" class="text-white text-md font-medium md:mb-12">Barbershop specializing in
                         haircuts, fades, classic shaves, and beard design for men. Our team of professional barbers
                         guarantees impeccable results, tailored to your style, personality, and modern tastes.</p>
-                    <a id="button" href="#work"
+                    <a id="home_button" href="#work"
                         class="w-fit mx-auto font-semibold bg-first-color p-[.7rem_2rem] rounded-md transition-colors duration-200 hover:bg-first-color-alt">
                         See Our Haircut Work
                     </a>
@@ -108,26 +108,26 @@
 
                     <div id="about_stats" class="flex gap-x-16 justify-center text-start lg:justify-start lg:gap-x-20">
                         <div>
-                            <h3 class="text-3xl text-first-color font-second-font font-semibold lg:text-5xl">99 %</h3>
+                            <h3 class="text-3xl text-first-color font-second-font font-semibold lg:text-5xl"><span class="about_counter">99</span><span>%</span></h3>
                             <p class="text-white font-medium font-second-font lg:text-3xl">CUSTOMER <br> SATISFACTION
                             </p>
                         </div>
 
                         <div>
-                            <h3 class="text-3xl text-first-color font-second-font font-semibold lg:text-5xl">7 +</h3>
+                            <h3 class="text-3xl text-first-color font-second-font font-semibold lg:text-5xl"><span class="about_counter">7</span><span>+</span></h3>
                             <p class="text-white font-medium font-second-font lg:text-3xl">YEAR OF <br> EXPERIENCE</p>
                         </div>
                     </div>
                 </div>
 
                 <img src="./assets/images/about-img.png" alt="Haircut In shop"
-                    class="w-[320px] rounded-lg justify-self-center shadow-xl/50 lg:w-[450px] lg:-order-1">
+                    class="about_img w-[320px] rounded-lg justify-self-center shadow-xl/50 lg:w-[450px] lg:-order-1">
             </div>
         </section>
 
         <!--=============== WORK SECTION ===============-->
 
-        <section id="work" class="bg-beige-color">
+        <section id="work" class="work bg-beige-color">
             <div class="container grid px-4 justify-center gap-y-12 lg:grid-cols-[300px_650px] lg:gap-x-10">
                 <div id="work_data"
                     class="text-center grid gap-y-4 sm:w-[400px] sm:mx-auto lg:w-full lg:place-content-center lg:gap-y-12 lg:text-start">
@@ -401,7 +401,7 @@
                     <p class="contact_discription font-semibold lg:pb-20">Contact us for a barber service, find us at
                         our nearest location, or write to us through our social media links and book now.</p>
                     <a href="#" target="_blank" rel="noopener noreferrer"
-                        class="bg-first-color p-[.7rem_2rem] font-semibold w-fit justify-self-center rounded-md transition-colors duration-200 hover:bg-first-color-alt lg:justify-self-start">Book
+                        class="contact_button bg-first-color p-[.7rem_2rem] font-semibold w-fit justify-self-center rounded-md transition-colors duration-200 hover:bg-first-color-alt lg:justify-self-start">Book
                         Via Whatsapp</a>
                 </div>
 
@@ -525,7 +525,11 @@
     </footer>
 
     <!--========== SCROLL UP ==========-->
-    <a href="#home" class="scrollup fixed right-6 -bottom-12 text-black bg-white p-2 rounded-xl text-2xl font-bold transition-all duration-400 shadow-2xl/200 hover:-translate-y-2" id="scrollup"><i class="ri-arrow-up-line"></i></a>
+    <a href="#home" class="scrollup fixed right-6 lg:right-12 -bottom-12 text-black bg-white p-2 rounded-xl text-2xl font-bold transition-all duration-400 shadow-2xl/200 hover:-translate-y-2" id="scrollup"><i class="ri-arrow-up-line"></i></a>
+
+    <!--=============== GSAP JS ===============-->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"></script>
 
     <!--=============== SWIPER JS ===============-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
