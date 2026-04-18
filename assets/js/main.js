@@ -264,3 +264,5 @@ reveal('.contact_card', {delay: 1.2, stagger: .2})
 
 reveal('.footer .container', {})
 
+
+// =============================================== PROJECT COMPLETED ======================================================== //
